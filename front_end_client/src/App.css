@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@layer utilities {
+    .custom-container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.swiper-wrapper{
+    padding: 10px;
+}
+/* Thiết lập chung cho các nút */
+.hh .swiper-button-next,
+.hh .swiper-button-prev {
+    color: black;
+    /* Đổi màu icon */
+    background-color: white;
+    /* Thêm nền tối */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Bo tròn nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)
+}
+
+
+
+
+
+/* Thêm icon bằng CSS ::after */
+.hh .swiper-button-prev::after {
+    content: "←";
+    /* Biểu tượng mũi tên trái */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hh .swiper-button-next::after {
+    content: "→";
+    /* Biểu tượng mũi tên phải */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Điều chỉnh vị trí */
+.hh .swiper-button-prev {
+    left: 0px;
+}
+
+.hh .swiper-button-next {
+    right: 0px;
+}
